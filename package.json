@@ -1,0 +1,22 @@
+{
+  "name": "express_ov4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --ignore client --ignore node_modules app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsdom": "^16.4.0",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,39 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/dogs
+
+###
+
+GET http://localhost:3000/api/dog
+
+###
+
+GET http://localhost:3000/api/dog/1
+
+###
+
+POST http://localhost:3000/api/dog
+Content-Type: application/json
+
+{
+    "name": "Sharik",
+    "breed": "Mops",
+    "age": 3
+}
+
+###
+
+PATCH http://localhost:3000/api/dog/2
+Content-Type: application/json
+
+{
+    "name": "Jack",
+    "age": 6,
+    "weight": 20
+}
+
+###
+
+DELETE  http://localhost:3000/api/dog/3
