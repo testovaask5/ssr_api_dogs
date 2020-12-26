@@ -4,6 +4,7 @@ const app = express()
 const dogsRouter = require('./routes/dogs.router')
 const { sequelize } = require('./models')
 const dogsPages = require('./pages/dogs.pages')
+const CONFIG = require('./config')
 // const dogsPages = require('./pages/dogs.pages')
 
 async function sync() {
@@ -23,6 +24,10 @@ app.get('/', (req, res) => {
 app.use('/api/dog', dogsRouter)
 
 app.use('/dogs', dogsPages)
+
+app.get('*/script.js', (req, res) => {
+    res.sendFile(CONFIG.script)
+})
 
 // app.use(express.static('./client/dist'))
 
